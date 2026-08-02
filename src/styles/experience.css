@@ -1,0 +1,55 @@
+.experience-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    transition:.3s;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--primary);
+
+    box-shadow:var(--shadow);
+
+}
+
+.experience-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.experience-card h4{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.experience-card span{
+
+    color:var(--text-secondary);
+
+}
+
+.experience-card p{
+
+    margin-top:20px;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}

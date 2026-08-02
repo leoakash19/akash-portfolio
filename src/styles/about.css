@@ -1,0 +1,61 @@
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+.about-text p{
+
+    color:var(--text-secondary);
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+.about-intro{
+
+    font-size:20px;
+
+}
+
+.about-highlights{
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+.highlight-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    padding:18px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--primary);
+
+}
