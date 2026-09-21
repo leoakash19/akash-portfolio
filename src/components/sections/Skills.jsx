@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import skills from "../../data/skills";
 
 export default function Skills() {
@@ -6,36 +7,37 @@ export default function Skills() {
       <div className="container">
 
         <h2 className="section-title">
-          Technical Skills
+          Tech Stack
         </h2>
 
         <div className="skills-grid">
 
-          {skills.map((skill) => (
+          {skills.map((group, index) => (
 
-            <div
+            <motion.div
+              key={index}
               className="skill-card"
-              key={skill.category}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: .5 }}
+              viewport={{ once: true }}
             >
 
-              <h3>{skill.category}</h3>
+              <h3>{group.category}</h3>
 
               <div className="skill-tags">
 
-                {skill.items.map((item) => (
+                {group.items.map((skill, i) => (
 
-                  <span
-                    className="skill-tag"
-                    key={item}
-                  >
-                    {item}
+                  <span key={i}>
+                    {skill}
                   </span>
 
                 ))}
 
               </div>
 
-            </div>
+            </motion.div>
 
           ))}
 

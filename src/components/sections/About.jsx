@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import about from "../../data/about";
 
 export default function About() {
@@ -6,42 +7,79 @@ export default function About() {
 
       <div className="container">
 
-        <h2 className="section-title">
+        <motion.h2
+          className="section-title"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: .6 }}
+          viewport={{ once: true }}
+        >
           {about.title}
-        </h2>
+        </motion.h2>
 
-        <div className="about-container">
+        <div className="about-grid">
 
-          <div className="about-text">
+          <motion.div
+            className="about-left"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: .7 }}
+            viewport={{ once: true }}
+          >
 
-            <p className="about-intro">
-              {about.intro}
-            </p>
+            <h3>
+              Backend Engineer
+            </h3>
 
             <p>
-              {about.description}
+              {about.summary}
             </p>
 
-            <p>
-              {about.objective}
-            </p>
+            <div className="highlight-container">
 
-          </div>
+              {about.highlights.map((item, index) => (
 
-          <div className="about-highlights">
+                <span
+                  key={index}
+                  className="highlight"
+                >
+                  {item}
+                </span>
 
-            {about.highlights.map((item) => (
+              ))}
+
+            </div>
+
+          </motion.div>
+
+          <motion.div
+            className="about-right"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: .7 }}
+            viewport={{ once: true }}
+          >
+
+            {about.stats.map((item, index) => (
 
               <div
-                className="highlight-card"
-                key={item}
+                key={index}
+                className="stat-card"
               >
-                {item}
+
+                <h2>
+                  {item.number}
+                </h2>
+
+                <p>
+                  {item.title}
+                </p>
+
               </div>
 
             ))}
 
-          </div>
+          </motion.div>
 
         </div>
 

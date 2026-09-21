@@ -1,11 +1,23 @@
 const skills = [
   {
-    category: "Programming Languages",
-    items: ["Python", "Java", "C", "C++", "JavaScript"],
+    category: "Languages",
+    items: [
+      "Python",
+      "Java",
+      "C",
+      "C++",
+      "JavaScript"
+    ]
   },
   {
     category: "Frontend",
-    items: ["HTML5", "CSS3", "React", "Bootstrap"],
+    items: [
+      "React",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "Tailwind CSS"
+    ]
   },
   {
     category: "Backend",
@@ -13,23 +25,35 @@ const skills = [
       "Django",
       "Django REST Framework",
       "REST APIs",
-      "JWT Authentication",
-    ],
+      "JWT Authentication"
+    ]
   },
   {
-    category: "Databases",
-    items: ["MySQL", "PostgreSQL", "SQLite"],
+    category: "Database",
+    items: [
+      "MySQL",
+      "PostgreSQL",
+      "SQLite",
+      "MongoDB"
+    ]
   },
   {
-    category: "Cloud & Tools",
+    category: "Cloud & DevOps",
     items: [
       "AWS",
+      "Docker",
       "Git",
       "GitHub",
+    ]
+  },
+  {
+    category: "Tools",
+    items: [
       "VS Code",
       "Postman",
-    ],
-  },
+      "Jupyter Notebook"
+    ]
+  }
 ];
 
 export default skills;

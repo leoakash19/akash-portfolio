@@ -1,83 +1,187 @@
 .navbar{
 
-    position:fixed;
+position:fixed;
 
-    top:0;
+top:0;
 
-    width:100%;
+left:0;
 
-    z-index:1000;
+width:100%;
 
-    background:rgba(15,23,42,.95);
+z-index:1000;
 
-    backdrop-filter:blur(10px);
+transition:.4s;
 
-    border-bottom:1px solid var(--border);
+padding:22px 0;
+
+}
+
+.navbar.scrolled{
+
+background:rgba(11,17,32,.82);
+
+backdrop-filter:blur(20px);
+
+border-bottom:1px solid rgba(255,255,255,.06);
 
 }
 
 .navbar-container{
 
-    display:flex;
+display:flex;
 
-    justify-content:space-between;
+justify-content:space-between;
 
-    align-items:center;
-
-    height:75px;
+align-items:center;
 
 }
 
 .logo{
 
-    font-size:24px;
+font-size:28px;
 
-    font-weight:700;
+font-weight:800;
 
-    color:var(--primary);
+letter-spacing:2px;
 
-}
-
-.nav-links{
-
-    display:flex;
-
-    list-style:none;
-
-    gap:30px;
+color:var(--primary);
 
 }
 
-.nav-links a{
+.nav{
 
-    color:var(--text-secondary);
+display:flex;
 
-    transition:var(--transition);
+gap:32px;
 
 }
 
-.nav-links a:hover{
+.nav a{
 
-    color:var(--primary);
+color:var(--text-secondary);
+
+transition:.3s;
+
+font-weight:500;
+
+position:relative;
+
+}
+
+.nav a:hover{
+
+color:white;
+
+}
+
+.nav a.active{
+
+color:var(--primary);
+
+}
+
+.nav a.active::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-8px;
+
+left:0;
+
+width:100%;
+
+height:2px;
+
+background:var(--primary);
+
+border-radius:20px;
 
 }
 
 .resume-btn{
 
-    background:var(--primary);
+background:var(--primary);
 
-    color:white;
+padding:14px 24px;
 
-    padding:12px 24px;
+border-radius:12px;
 
-    border-radius:8px;
+font-weight:600;
 
-    transition:var(--transition);
+transition:.3s;
 
 }
 
 .resume-btn:hover{
 
-    background:var(--primary-dark);
+transform:translateY(-3px);
+
+box-shadow:0 15px 30px rgba(56,189,248,.25);
+
+}
+
+.menu-btn{
+
+display:none;
+
+background:none;
+
+border:none;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+@media(max-width:900px){
+
+.menu-btn{
+
+display:block;
+
+}
+
+.resume-btn{
+
+display:none;
+
+}
+
+.nav{
+
+position:fixed;
+
+right:-100%;
+
+top:0;
+
+height:100vh;
+
+width:280px;
+
+background:#111827;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+gap:35px;
+
+transition:.35s;
+
+}
+
+.nav.active{
+
+right:0;
+
+}
 
 }

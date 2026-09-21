@@ -1,30 +1,50 @@
 const projects = [
   {
+    id: 1,
+
+    featured: true,
+
     title: "Recipe Finder Platform",
 
+    subtitle: "Full Stack Web Application",
+
     description:
-      "A full-stack recipe sharing platform where users can discover, create, bookmark and share recipes using secure authentication and REST APIs.",
+      "A modern recipe sharing platform where users can discover, upload, bookmark and manage recipes using secure authentication, REST APIs and responsive UI.",
+
+    image: "/projects/recipe.png",
 
     technologies: [
       "React",
       "Django",
-      "DRF",
+      "Django REST Framework",
       "JWT",
       "MySQL",
     ],
 
-    image: "/projects/recipe.png",
+    demo: null,
 
-    github: "https://github.com/YOUR_USERNAME",
+    category: "Full Stack",
 
-    demo: "#",
+    status: "Completed",
+
+    featuredText: "Featured Project",
+
+    year: "2026",
   },
 
   {
+    id: 2,
+
+    featured: true,
+
     title: "RFC Backend System",
 
+    subtitle: "Backend REST API",
+
     description:
-      "Backend application built using Django REST Framework featuring authentication, recipe management, comments, bookmarks and user profiles.",
+      "A scalable backend system built with Django REST Framework featuring authentication, user management, recipe CRUD operations, comments, bookmarks and secure REST APIs.",
+
+    image: "/projects/rfc.png",
 
     technologies: [
       "Python",
@@ -33,51 +53,112 @@ const projects = [
       "SQLite",
     ],
 
-    image: "/projects/rfc.png",
+    demo: null,
 
-    github: "https://github.com/YOUR_USERNAME",
+    category: "Backend",
 
-    demo: "#",
+    status: "Completed",
+
+    featuredText: "Production Ready",
+
+    year: "2026",
   },
 
   {
+    id: 3,
+
+    featured: false,
+
     title: "Thermal Imaging IoT",
 
+    subtitle: "Final Year Project",
+
     description:
-      "Final year project using IoT and thermal imaging to detect external parasites in pets through intelligent image processing.",
+      "IoT-based thermal imaging solution for detecting external parasites in pets using intelligent image processing and thermal sensors.",
+
+    image: "/projects/thermal.png",
 
     technologies: [
       "Python",
       "IoT",
       "ESP32",
       "Thermal Camera",
+      "CNN",
     ],
 
-    image: "/projects/thermal.png",
+    demo: null,
 
-    github: "#",
+    category: "IoT",
 
-    demo: "#",
+    status: "Ongoing",
+
+    featuredText: null,
+
+    year: "2026",
   },
 
   {
+    id: 4,
+
+    featured: false,
+
     title: "AI Data Visualization Chatbot",
 
+    subtitle: "Artificial Intelligence",
+
     description:
-      "An AI chatbot capable of generating intelligent graphs and visualizations from uploaded CSV and Excel datasets.",
+      "AI-powered chatbot capable of generating intelligent charts and visualizations from CSV and Excel datasets.",
+
+    image: "/projects/chatbot.png",
 
     technologies: [
       "Python",
       "Pandas",
-      "Plotly",
       "Matplotlib",
+      "Plotly",
     ],
 
-    image: "/projects/chatbot.png",
+    demo: null,
 
-    github: "#",
+    category: "Artificial Intelligence",
 
-    demo: "#",
+    status: "Completed",
+
+    featuredText: null,
+
+    year: "2025",
+  },
+
+  {
+    id: 5,
+
+    featured: false,
+
+    title: "Personal Portfolio",
+
+    subtitle: "React Portfolio",
+
+    description:
+      "Modern portfolio website built using React and Vite showcasing projects, technical skills, education and certifications.",
+
+    image: "/projects/portfolio.png",
+
+    technologies: [
+      "React",
+      "Vite",
+      "Framer Motion",
+      "CSS",
+    ],
+
+    demo: null,
+
+    category: "Frontend",
+
+    status: "Ongoing",
+
+    featuredText: null,
+
+    year: "2026",
   },
 ];
 

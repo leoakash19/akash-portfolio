@@ -1,8 +1,8 @@
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
+import DeveloperConsole from "./components/sections/DeveloperConsole";
 import Journey from "./components/sections/Journey";
 import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
@@ -16,17 +16,23 @@ export default function App() {
     <>
       <Navbar />
 
-      <main>
-        <Hero />
-        <About />
-        <Journey />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Education />
-        <Certifications />
-        <Contact />
-      </main>
+      <Hero />
+      <DeveloperConsole />
+      <About />
+
+      <Skills />
+
+      <Projects />
+
+      <Journey />
+
+      <Experience />
+
+      <Education />
+
+      <Certifications />
+
+      <Contact />
 
       <Footer />
     </>
