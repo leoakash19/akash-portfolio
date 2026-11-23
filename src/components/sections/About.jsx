@@ -28,7 +28,7 @@ export default function About() {
           >
 
             <h3>
-              Backend Engineer
+              Python Full Stack Developer
             </h3>
 
             <p>

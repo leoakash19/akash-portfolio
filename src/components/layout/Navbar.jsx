@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className="container navbar-container">
 
         <a href="#hero" className="logo">
-          AKASH
+          AKASH S
         </a>
 
         <nav className={menuOpen ? "nav active" : "nav"}>

@@ -1,6 +1,6 @@
 const journey = [
   {
-    year: "2023",
+    year: "2022",
     title: "Started Engineering",
     description: "Started my B.Tech in Information Technology."
   },

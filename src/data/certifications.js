@@ -16,7 +16,7 @@ const certifications = [
   },
   {
     title: "AI & Machine Learning Internship",
-    issuer: "Edunet Foundation",
+    issuer: "Gateway Sofware Solutions",
     year: "2025",
   },
 ];

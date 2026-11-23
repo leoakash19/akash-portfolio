@@ -2,7 +2,7 @@ const experience = {
   experience: [
     {
       title: "AI & Machine Learning Intern",
-      company: "Edunet Foundation",
+      company: "Gateway Sofware Solutions",
       duration: "2025",
       description:
         "Worked on AI & Machine Learning concepts and built real-world AI applications."
@@ -12,9 +12,9 @@ const experience = {
   education: [
     {
       degree: "B.Tech Information Technology",
-      college: "YOUR COLLEGE NAME",
-      duration: "2023 - 2027",
-      cgpa: "CGPA: 7.72"
+      college: "Dr. M.G.R. Eductional And Research Institute",
+      duration: "2022 - 2026",
+      cgpa: "CGPA: 8.1"
     }
   ]
 };

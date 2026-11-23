@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
 
-        <h3>Akash Senthil Kumar</h3>
+        <h3>Akash S</h3>
 
         <p>
           Backend Developer • Python Full Stack Developer • AWS Cloud Enthusiast
